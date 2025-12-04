@@ -1,0 +1,2295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on darwin)" generated="2025-12-05T01:20:50.730002" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="/Users/s.duangarpai/Downloads/Test-TTB/testcases">
+<suite id="s1-s1" name="Senior Testengineer Assessment" source="/Users/s.duangarpai/Downloads/Test-TTB/testcases/senior_testengineer_assessment">
+<suite id="s1-s1-s1" name="Task4 Task5 Api Test" source="/Users/s.duangarpai/Downloads/Test-TTB/testcases/senior_testengineer_assessment/task4_task5_api_test.robot">
+<kw name="Suppress SSL Warnings" type="SETUP">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.800254" level="FAIL">Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
+<arg>import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)</arg>
+<arg>modules=urllib3</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:20:50.800099" elapsed="0.000259">Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</kw>
+<doc>Suppress InsecureRequestWarning for unverified HTTPS requests</doc>
+<status status="FAIL" start="2025-12-05T01:20:50.799863" elapsed="0.000566">Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</kw>
+<test id="s1-s1-s1-t1" name="TC01 - GET Pet By ID - Valid Pet ID Should Return 200" line="13">
+<doc>Verify GET /pet/{petId} returns 200 for valid pet ID</doc>
+<tag>api</tag>
+<tag>get_pet</tag>
+<tag>positive</tag>
+<tag>task4</tag>
+<tag>task5</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.800470" elapsed="0.000215">Parent suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<test id="s1-s1-s1-t2" name="TC02 - GET Pet By ID - Invalid Pet ID Should Return 404" line="34">
+<doc>Verify GET /pet/{petId} returns 404 for non-existent pet ID</doc>
+<tag>api</tag>
+<tag>get_pet</tag>
+<tag>negative</tag>
+<tag>task4</tag>
+<tag>task5</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.800787" elapsed="0.000171">Parent suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<test id="s1-s1-s1-t3" name="TC03 - GET Store Order By ID - Valid Order ID Should Return 200" line="50">
+<doc>Verify GET /store/order/{orderId} returns 200 for valid order ID</doc>
+<tag>api</tag>
+<tag>get_order</tag>
+<tag>positive</tag>
+<tag>task4</tag>
+<tag>task5</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.801045" elapsed="0.000159">Parent suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<test id="s1-s1-s1-t4" name="TC04 - GET Store Order By ID - Invalid Order ID Should Return 404" line="70">
+<doc>Verify GET /store/order/{orderId} returns 404 for non-existent order ID</doc>
+<tag>api</tag>
+<tag>get_order</tag>
+<tag>negative</tag>
+<tag>task4</tag>
+<tag>task5</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.801279" elapsed="0.000158">Parent suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<test id="s1-s1-s1-t5" name="TC05 - POST User - Create User Should Return 200" line="86">
+<doc>Verify POST /user creates user and returns 200</doc>
+<tag>api</tag>
+<tag>positive</tag>
+<tag>post_user</tag>
+<tag>task4</tag>
+<tag>task5</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.801511" elapsed="0.000131">Parent suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<test id="s1-s1-s1-t6" name="TC06 - POST User - Invalid Data Should Return 400 or 500" line="113">
+<doc>Verify POST /user with invalid data returns error status code</doc>
+<tag>api</tag>
+<tag>negative</tag>
+<tag>post_user</tag>
+<tag>task4</tag>
+<tag>task5</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.801715" elapsed="0.000144">Parent suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<test id="s1-s1-s1-t7" name="TC07 - GET Pet By ID - Test Multiple Pet IDs" line="133">
+<doc>Test GET /pet/{petId} with multiple pet IDs to get different response codes</doc>
+<tag>api</tag>
+<tag>get_pet</tag>
+<tag>multiple</tag>
+<tag>task5</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.801930" elapsed="0.000152">Parent suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<test id="s1-s1-s1-t8" name="TC08 - GET Store Order By ID - Test Multiple Order IDs" line="150">
+<doc>Test GET /store/order/{orderId} with multiple order IDs to get different response codes</doc>
+<tag>api</tag>
+<tag>get_order</tag>
+<tag>multiple</tag>
+<tag>task5</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.802149" elapsed="0.000154">Parent suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<test id="s1-s1-s1-t9" name="TC09 - POST User - Test Different User Scenarios" line="167">
+<doc>Test POST /user with different scenarios to get different response codes</doc>
+<tag>api</tag>
+<tag>multiple</tag>
+<tag>post_user</tag>
+<tag>task5</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.802371" elapsed="0.000143">Parent suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<test id="s1-s1-s1-t10" name="TC10 - Verify All APIs Return Expected Response Codes" line="194">
+<doc>Verify all three APIs return expected response codes (200 or other codes)</doc>
+<tag>api</tag>
+<tag>comprehensive</tag>
+<tag>task5</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.802583" elapsed="0.000157">Parent suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<doc>Task 4-5: API Testing - Petstore Swagger API Test Automation</doc>
+<status status="FAIL" start="2025-12-05T01:20:50.747081" elapsed="0.055841">Suite setup failed:
+Evaluating expression 'import urllib3; urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</suite>
+<suite id="s1-s1-s2" name="Task6 Sql Test" source="/Users/s.duangarpai/Downloads/Test-TTB/testcases/senior_testengineer_assessment/task6_sql_test.robot">
+<test id="s1-s1-s2-t1" name="TC01 - Task 6: Display All Product Names From Products Table" line="7">
+<kw name="Connect To Database">
+<msg time="2025-12-05T01:20:50.807151" level="FAIL">No keyword with name 'Connect To Database' found.</msg>
+<arg>${DB_API_MODULE_NAME}</arg>
+<arg>${DB_CONNECT_STRING}</arg>
+<status status="FAIL" start="2025-12-05T01:20:50.807121" elapsed="0.000062">No keyword with name 'Connect To Database' found.</status>
+</kw>
+<kw name="Query">
+<var>${query_result}</var>
+<arg>SELECT product_name FROM Products</arg>
+<status status="NOT RUN" start="2025-12-05T01:20:50.807281" elapsed="0.000010"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<arg>${query_result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.807362" elapsed="0.000011"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Total products found: ${query_result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.807421" elapsed="0.000009"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<arg>Product Name: ${row}[0]</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.807550" elapsed="0.000008"/>
+</kw>
+<var name="${row}"/>
+<status status="NOT RUN" start="2025-12-05T01:20:50.807517" elapsed="0.000054"/>
+</iter>
+<var>${row}</var>
+<value>@{query_result}</value>
+<status status="NOT RUN" start="2025-12-05T01:20:50.807470" elapsed="0.000115"/>
+</for>
+<kw name="Disconnect From Database" type="TEARDOWN">
+<msg time="2025-12-05T01:20:50.807986" level="FAIL">No keyword with name 'Disconnect From Database' found.</msg>
+<status status="FAIL" start="2025-12-05T01:20:50.807973" elapsed="0.000028">No keyword with name 'Disconnect From Database' found.</status>
+</kw>
+<doc>Verify query to display all product names from Products table</doc>
+<tag>products</tag>
+<tag>query</tag>
+<tag>sql</tag>
+<tag>task6</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.805837" elapsed="0.002201">No keyword with name 'Connect To Database' found.
+
+Also teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-s2-t2" name="TC02 - Task 7: Display ID Name Citizen With Registered Date In 2022" line="30">
+<kw name="Connect To Database">
+<msg time="2025-12-05T01:20:50.808652" level="FAIL">No keyword with name 'Connect To Database' found.</msg>
+<arg>${DB_API_MODULE_NAME}</arg>
+<arg>${DB_CONNECT_STRING}</arg>
+<status status="FAIL" start="2025-12-05T01:20:50.808642" elapsed="0.000025">No keyword with name 'Connect To Database' found.</status>
+</kw>
+<kw name="Query">
+<var>${query_result}</var>
+<arg>SELECT id, name, citizen FROM ${TABLE_NAME} WHERE YEAR(registered_date) = 2022</arg>
+<status status="NOT RUN" start="2025-12-05T01:20:50.808720" elapsed="0.000008"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<arg>${query_result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.808770" elapsed="0.000008"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Total records found for 2022: ${query_result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.808817" elapsed="0.000007"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<arg>ID: ${row}[0], Name: ${row}[1], Citizen: ${row}[2]</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.808908" elapsed="0.000006"/>
+</kw>
+<var name="${row}"/>
+<status status="NOT RUN" start="2025-12-05T01:20:50.808881" elapsed="0.000046"/>
+</iter>
+<var>${row}</var>
+<value>@{query_result}</value>
+<status status="NOT RUN" start="2025-12-05T01:20:50.808854" elapsed="0.000085"/>
+</for>
+<kw name="Disconnect From Database" type="TEARDOWN">
+<msg time="2025-12-05T01:20:50.809287" level="FAIL">No keyword with name 'Disconnect From Database' found.</msg>
+<status status="FAIL" start="2025-12-05T01:20:50.809275" elapsed="0.000026">No keyword with name 'Disconnect From Database' found.</status>
+</kw>
+<doc>Verify query to display id, name and citizen who have registered date in 2022</doc>
+<tag>date_filter</tag>
+<tag>query</tag>
+<tag>sql</tag>
+<tag>task7</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.808143" elapsed="0.001190">No keyword with name 'Connect To Database' found.
+
+Also teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-s2-t3" name="TC03 - Task 8: Display Product And Customer Info For Customer ID 001110001" line="53">
+<kw name="Connect To Database">
+<msg time="2025-12-05T01:20:50.809922" level="FAIL">No keyword with name 'Connect To Database' found.</msg>
+<arg>${DB_API_MODULE_NAME}</arg>
+<arg>${DB_CONNECT_STRING}</arg>
+<status status="FAIL" start="2025-12-05T01:20:50.809907" elapsed="0.000033">No keyword with name 'Connect To Database' found.</status>
+</kw>
+<kw name="Query">
+<var>${query_result}</var>
+<arg>SELECT p.product_id, p.product_name, CONCAT(c.first_name, ' ', c.last_name) AS customer_full_name, c.citizen AS customer_citizen FROM Products p INNER JOIN Orders o ON p.product_id = o.product_id INNER JOIN Customers c ON o.customer_id = c.customer_id WHERE c.customer_id = '001110001'</arg>
+<status status="NOT RUN" start="2025-12-05T01:20:50.810006" elapsed="0.000008"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<arg>${query_result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.810064" elapsed="0.000009"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Total records found for customer_id 001110001: ${query_result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.810153" elapsed="0.000033"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<arg>Product ID: ${row}[0], Product Name: ${row}[1], Customer Full Name: ${row}[2], Customer Citizen: ${row}[3]</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.810275" elapsed="0.000007"/>
+</kw>
+<var name="${row}"/>
+<status status="NOT RUN" start="2025-12-05T01:20:50.810247" elapsed="0.000048"/>
+</iter>
+<var>${row}</var>
+<value>@{query_result}</value>
+<status status="NOT RUN" start="2025-12-05T01:20:50.810222" elapsed="0.000084"/>
+</for>
+<kw name="Disconnect From Database" type="TEARDOWN">
+<msg time="2025-12-05T01:20:50.810649" level="FAIL">No keyword with name 'Disconnect From Database' found.</msg>
+<status status="FAIL" start="2025-12-05T01:20:50.810637" elapsed="0.000026">No keyword with name 'Disconnect From Database' found.</status>
+</kw>
+<doc>Verify query to display product id, product name, customer full name, customer citizen for customer_id = '001110001'</doc>
+<tag>join</tag>
+<tag>query</tag>
+<tag>sql</tag>
+<tag>task8</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.809441" elapsed="0.001255">No keyword with name 'Connect To Database' found.
+
+Also teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</test>
+<test id="s1-s1-s2-t4" name="TC04 - Task 6: Verify Product Names Query Structure" line="76">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.811039" level="INFO">${query} = SELECT product_name FROM Products</msg>
+<var>${query}</var>
+<arg>SELECT product_name FROM Products</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.810939" elapsed="0.000112"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>SELECT</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.811098" elapsed="0.000068"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>product_name</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.811211" elapsed="0.000154"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>FROM</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.811454" elapsed="0.000072"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>Products</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.811580" elapsed="0.000057"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.811771" level="INFO">Query structure validated: SELECT product_name FROM Products</msg>
+<arg>Query structure validated: ${query}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.811685" elapsed="0.000116"/>
+</kw>
+<doc>Verify that the query structure for Task 6 is correct</doc>
+<tag>sql</tag>
+<tag>task6</tag>
+<tag>validation</tag>
+<status status="PASS" start="2025-12-05T01:20:50.810780" elapsed="0.001074"/>
+</test>
+<test id="s1-s1-s2-t5" name="TC05 - Task 7: Verify Date Filter Query Structure" line="88">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.812184" level="INFO">${query} = SELECT id, name, citizen FROM Customers WHERE YEAR(registered_date) = 2022</msg>
+<var>${query}</var>
+<arg>SELECT id, name, citizen FROM ${TABLE_NAME} WHERE YEAR(registered_date) = 2022</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.812088" elapsed="0.000108"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>SELECT</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.812243" elapsed="0.000050"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>WHERE</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.812335" elapsed="0.000043"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>YEAR</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.812419" elapsed="0.000050"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>2022</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.812515" elapsed="0.000046"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.812665" level="INFO">Query structure validated: SELECT id, name, citizen FROM Customers WHERE YEAR(registered_date) = 2022</msg>
+<arg>Query structure validated: ${query}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.812605" elapsed="0.000078"/>
+</kw>
+<doc>Verify that the query structure for Task 7 is correct</doc>
+<tag>sql</tag>
+<tag>task7</tag>
+<tag>validation</tag>
+<status status="PASS" start="2025-12-05T01:20:50.811927" elapsed="0.000805"/>
+</test>
+<test id="s1-s1-s2-t6" name="TC06 - Task 8: Verify Join Query Structure" line="100">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.812999" level="INFO">${query} = SELECT p.product_id, p.product_name, CONCAT(c.first_name, ' ', c.last_name) AS customer_full_name, c.citizen AS customer_citizen FROM Products p INNER JOIN Orders o ON p.product_id = o.product_id INNE...</msg>
+<var>${query}</var>
+<arg>SELECT p.product_id, p.product_name, CONCAT(c.first_name, ' ', c.last_name) AS customer_full_name, c.citizen AS customer_citizen FROM Products p INNER JOIN Orders o ON p.product_id = o.product_id INNER JOIN Customers c ON o.customer_id = c.customer_id WHERE c.customer_id = '001110001'</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.812944" elapsed="0.000066"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>SELECT</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.813055" elapsed="0.000046"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>INNER JOIN</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.813143" elapsed="0.000045"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>WHERE</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.813228" elapsed="0.000042"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${query}</arg>
+<arg>001110001</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.813309" elapsed="0.000042"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.813446" level="INFO">Query structure validated: SELECT p.product_id, p.product_name, CONCAT(c.first_name, ' ', c.last_name) AS customer_full_name, c.citizen AS customer_citizen FROM Products p INNER JOIN Orders o ON p.product_id = o.product_id INNER JOIN Customers c ON o.customer_id = c.customer_id WHERE c.customer_id = '001110001'</msg>
+<arg>Query structure validated: ${query}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.813391" elapsed="0.000110"/>
+</kw>
+<doc>Verify that the query structure for Task 8 is correct</doc>
+<tag>sql</tag>
+<tag>task8</tag>
+<tag>validation</tag>
+<status status="PASS" start="2025-12-05T01:20:50.812801" elapsed="0.000894"/>
+</test>
+<doc>Task 6-8: SQL Test - Database Query Test Automation</doc>
+<status status="FAIL" start="2025-12-05T01:20:50.803179" elapsed="0.011050"/>
+</suite>
+<status status="FAIL" start="2025-12-05T01:20:50.746288" elapsed="0.068419"/>
+</suite>
+<suite id="s1-s2" name="Task1 Duplicate Items" source="/Users/s.duangarpai/Downloads/Test-TTB/testcases/task1_duplicate_items.robot">
+<test id="s1-s2-t1" name="Find Duplicate Items From List A And List B" line="7">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.820548" level="INFO">List A: ['1', '2', '3', '5', '6', '8', '9']</msg>
+<arg>List A: @{LIST_A}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.820433" elapsed="0.000146"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.820713" level="INFO">List B: ['3', '2', '1', '5', '6', '0']</msg>
+<arg>List B: @{LIST_B}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.820648" elapsed="0.000082"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.820838" level="INFO">@{duplicate_list} = [ ]</msg>
+<var>@{duplicate_list}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.820781" elapsed="0.000070"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.821112" elapsed="0.000072"/>
+</kw>
+<msg time="2025-12-05T01:20:50.821217" level="INFO">${exists} = True</msg>
+<var>${exists}</var>
+<arg>List Should Contain Value</arg>
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.821038" elapsed="0.000189"/>
+</kw>
+<if>
+<branch type="IF" condition="${exists}">
+<kw name="Append To List" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.821326" elapsed="0.000054"/>
+</kw>
+<status status="PASS" start="2025-12-05T01:20:50.821272" elapsed="0.000124"/>
+</branch>
+<status status="PASS" start="2025-12-05T01:20:50.821257" elapsed="0.000153"/>
+</if>
+<var name="${item}">1</var>
+<status status="PASS" start="2025-12-05T01:20:50.820995" elapsed="0.000426"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.821557" elapsed="0.000061"/>
+</kw>
+<msg time="2025-12-05T01:20:50.821662" level="INFO">${exists} = True</msg>
+<var>${exists}</var>
+<arg>List Should Contain Value</arg>
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.821508" elapsed="0.000164"/>
+</kw>
+<if>
+<branch type="IF" condition="${exists}">
+<kw name="Append To List" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.821750" elapsed="0.000051"/>
+</kw>
+<status status="PASS" start="2025-12-05T01:20:50.821704" elapsed="0.000112"/>
+</branch>
+<status status="PASS" start="2025-12-05T01:20:50.821695" elapsed="0.000132"/>
+</if>
+<var name="${item}">2</var>
+<status status="PASS" start="2025-12-05T01:20:50.821475" elapsed="0.000361"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.821958" elapsed="0.000070"/>
+</kw>
+<msg time="2025-12-05T01:20:50.822058" level="INFO">${exists} = True</msg>
+<var>${exists}</var>
+<arg>List Should Contain Value</arg>
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.821914" elapsed="0.000154"/>
+</kw>
+<if>
+<branch type="IF" condition="${exists}">
+<kw name="Append To List" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.822136" elapsed="0.000048"/>
+</kw>
+<status status="PASS" start="2025-12-05T01:20:50.822096" elapsed="0.000100"/>
+</branch>
+<status status="PASS" start="2025-12-05T01:20:50.822089" elapsed="0.000116"/>
+</if>
+<var name="${item}">3</var>
+<status status="PASS" start="2025-12-05T01:20:50.821884" elapsed="0.000329"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.822323" elapsed="0.000056"/>
+</kw>
+<msg time="2025-12-05T01:20:50.822408" level="INFO">${exists} = True</msg>
+<var>${exists}</var>
+<arg>List Should Contain Value</arg>
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.822281" elapsed="0.000136"/>
+</kw>
+<if>
+<branch type="IF" condition="${exists}">
+<kw name="Append To List" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.822483" elapsed="0.000049"/>
+</kw>
+<status status="PASS" start="2025-12-05T01:20:50.822442" elapsed="0.000104"/>
+</branch>
+<status status="PASS" start="2025-12-05T01:20:50.822436" elapsed="0.000119"/>
+</if>
+<var name="${item}">5</var>
+<status status="PASS" start="2025-12-05T01:20:50.822255" elapsed="0.000309"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.822675" elapsed="0.000055"/>
+</kw>
+<msg time="2025-12-05T01:20:50.822756" level="INFO">${exists} = True</msg>
+<var>${exists}</var>
+<arg>List Should Contain Value</arg>
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.822633" elapsed="0.000132"/>
+</kw>
+<if>
+<branch type="IF" condition="${exists}">
+<kw name="Append To List" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.822827" elapsed="0.000052"/>
+</kw>
+<status status="PASS" start="2025-12-05T01:20:50.822788" elapsed="0.000105"/>
+</branch>
+<status status="PASS" start="2025-12-05T01:20:50.822782" elapsed="0.000121"/>
+</if>
+<var name="${item}">6</var>
+<status status="PASS" start="2025-12-05T01:20:50.822605" elapsed="0.000307"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="List Should Contain Value" owner="Collections">
+<msg time="2025-12-05T01:20:50.823112" level="FAIL">[ 3 | 2 | 1 | 5 | 6 | 0 ] does not contain value '8'.</msg>
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="FAIL" start="2025-12-05T01:20:50.823028" elapsed="0.000125">[ 3 | 2 | 1 | 5 | 6 | 0 ] does not contain value '8'.</status>
+</kw>
+<msg time="2025-12-05T01:20:50.823188" level="INFO">${exists} = False</msg>
+<var>${exists}</var>
+<arg>List Should Contain Value</arg>
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.822985" elapsed="0.000212"/>
+</kw>
+<if>
+<branch type="IF" condition="${exists}">
+<kw name="Append To List" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.823265" elapsed="0.000008"/>
+</kw>
+<status status="NOT RUN" start="2025-12-05T01:20:50.823223" elapsed="0.000064"/>
+</branch>
+<status status="PASS" start="2025-12-05T01:20:50.823216" elapsed="0.000081"/>
+</if>
+<var name="${item}">8</var>
+<status status="PASS" start="2025-12-05T01:20:50.822957" elapsed="0.000349"/>
+</iter>
+<iter>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="List Should Contain Value" owner="Collections">
+<msg time="2025-12-05T01:20:50.823479" level="FAIL">[ 3 | 2 | 1 | 5 | 6 | 0 ] does not contain value '9'.</msg>
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="FAIL" start="2025-12-05T01:20:50.823418" elapsed="0.000087">[ 3 | 2 | 1 | 5 | 6 | 0 ] does not contain value '9'.</status>
+</kw>
+<msg time="2025-12-05T01:20:50.823536" level="INFO">${exists} = False</msg>
+<var>${exists}</var>
+<arg>List Should Contain Value</arg>
+<arg>${LIST_B}</arg>
+<arg>${item}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.823375" elapsed="0.000170"/>
+</kw>
+<if>
+<branch type="IF" condition="${exists}">
+<kw name="Append To List" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:50.823608" elapsed="0.000006"/>
+</kw>
+<status status="NOT RUN" start="2025-12-05T01:20:50.823569" elapsed="0.000057"/>
+</branch>
+<status status="PASS" start="2025-12-05T01:20:50.823562" elapsed="0.000072"/>
+</if>
+<var name="${item}">9</var>
+<status status="PASS" start="2025-12-05T01:20:50.823347" elapsed="0.000295"/>
+</iter>
+<var>${item}</var>
+<value>@{LIST_A}</value>
+<status status="PASS" start="2025-12-05T01:20:50.820889" elapsed="0.002762"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.823763" level="INFO">Duplicate items found: ['1', '2', '3', '5', '6']</msg>
+<arg>Duplicate items found: @{duplicate_list}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.823698" elapsed="0.000081"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.823874" level="INFO">${expected_duplicates} = ['1', '2', '3', '5', '6']</msg>
+<var>${expected_duplicates}</var>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>5</arg>
+<arg>6</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.823822" elapsed="0.000061"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.823981" level="INFO">Length is 5.</msg>
+<msg time="2025-12-05T01:20:50.824009" level="INFO">${duplicate_count} = 5</msg>
+<var>${duplicate_count}</var>
+<arg>${duplicate_list}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.823940" elapsed="0.000077"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.824100" level="INFO">Length is 5.</msg>
+<msg time="2025-12-05T01:20:50.824124" level="INFO">${expected_count} = 5</msg>
+<var>${expected_count}</var>
+<arg>${expected_duplicates}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.824062" elapsed="0.000069"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${duplicate_count}</arg>
+<arg>${expected_count}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.824173" elapsed="0.000075"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${expected_item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.824369" elapsed="0.000057"/>
+</kw>
+<var name="${expected_item}">1</var>
+<status status="PASS" start="2025-12-05T01:20:50.824344" elapsed="0.000097"/>
+</iter>
+<iter>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${expected_item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.824495" elapsed="0.000057"/>
+</kw>
+<var name="${expected_item}">2</var>
+<status status="PASS" start="2025-12-05T01:20:50.824471" elapsed="0.000094"/>
+</iter>
+<iter>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${expected_item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.824620" elapsed="0.000057"/>
+</kw>
+<var name="${expected_item}">3</var>
+<status status="PASS" start="2025-12-05T01:20:50.824595" elapsed="0.000096"/>
+</iter>
+<iter>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${expected_item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.824738" elapsed="0.000050"/>
+</kw>
+<var name="${expected_item}">5</var>
+<status status="PASS" start="2025-12-05T01:20:50.824716" elapsed="0.000085"/>
+</iter>
+<iter>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${duplicate_list}</arg>
+<arg>${expected_item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.824847" elapsed="0.000049"/>
+</kw>
+<var name="${expected_item}">6</var>
+<status status="PASS" start="2025-12-05T01:20:50.824826" elapsed="0.000083"/>
+</iter>
+<var>${expected_item}</var>
+<value>@{expected_duplicates}</value>
+<status status="PASS" start="2025-12-05T01:20:50.824290" elapsed="0.000628"/>
+</for>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.825062" level="INFO">${list_a_python} = [1, 2, 3, 5, 6, 8, 9]</msg>
+<var>${list_a_python}</var>
+<arg>[1, 2, 3, 5, 6, 8, 9]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.824965" elapsed="0.000107"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.825182" level="INFO">${list_b_python} = [3, 2, 1, 5, 6, 0]</msg>
+<var>${list_b_python}</var>
+<arg>[3, 2, 1, 5, 6, 0]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.825118" elapsed="0.000073"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.825445" level="INFO">${duplicate_set} = {1, 2, 3, 5, 6}</msg>
+<var>${duplicate_set}</var>
+<arg>set(${list_a_python}) &amp; set(${list_b_python})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.825294" elapsed="0.000165"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.825704" level="INFO">${duplicate_list_method2_int} = [1, 2, 3, 5, 6]</msg>
+<var>${duplicate_list_method2_int}</var>
+<arg>sorted(list(${duplicate_set}))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.825564" elapsed="0.000154"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.825906" level="INFO">${duplicate_list_method2} = ['1', '2', '3', '5', '6']</msg>
+<var>${duplicate_list_method2}</var>
+<arg>[str(x) for x in ${duplicate_list_method2_int}]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.825783" elapsed="0.000135"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.826039" level="INFO">Duplicate items (method 2 - sorted): ['1', '2', '3', '5', '6']</msg>
+<arg>Duplicate items (method 2 - sorted): ${duplicate_list_method2}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.825971" elapsed="0.000095"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-12-05T01:20:50.826189" level="INFO">Length is 5.</msg>
+<msg time="2025-12-05T01:20:50.826219" level="INFO">${method2_count} = 5</msg>
+<var>${method2_count}</var>
+<arg>${duplicate_list_method2}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.826120" elapsed="0.000107"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${method2_count}</arg>
+<arg>${expected_count}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.826289" elapsed="0.000071"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${duplicate_list_method2}</arg>
+<arg>${expected_item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.826490" elapsed="0.000067"/>
+</kw>
+<var name="${expected_item}">1</var>
+<status status="PASS" start="2025-12-05T01:20:50.826460" elapsed="0.000112"/>
+</iter>
+<iter>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${duplicate_list_method2}</arg>
+<arg>${expected_item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.826634" elapsed="0.000061"/>
+</kw>
+<var name="${expected_item}">2</var>
+<status status="PASS" start="2025-12-05T01:20:50.826605" elapsed="0.000105"/>
+</iter>
+<iter>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${duplicate_list_method2}</arg>
+<arg>${expected_item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.826765" elapsed="0.000263"/>
+</kw>
+<var name="${expected_item}">3</var>
+<status status="PASS" start="2025-12-05T01:20:50.826740" elapsed="0.000304"/>
+</iter>
+<iter>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${duplicate_list_method2}</arg>
+<arg>${expected_item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.827101" elapsed="0.000058"/>
+</kw>
+<var name="${expected_item}">5</var>
+<status status="PASS" start="2025-12-05T01:20:50.827075" elapsed="0.000098"/>
+</iter>
+<iter>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${duplicate_list_method2}</arg>
+<arg>${expected_item}</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.827226" elapsed="0.000058"/>
+</kw>
+<var name="${expected_item}">6</var>
+<status status="PASS" start="2025-12-05T01:20:50.827202" elapsed="0.000096"/>
+</iter>
+<var>${expected_item}</var>
+<value>@{expected_duplicates}</value>
+<status status="PASS" start="2025-12-05T01:20:50.826399" elapsed="0.000920"/>
+</for>
+<doc>Check duplicate items from list A and list B and append to a new list</doc>
+<tag>task1</tag>
+<status status="PASS" start="2025-12-05T01:20:50.820168" elapsed="0.007213"/>
+</test>
+<doc>Task 1: Check duplicate items from list A and list B and append to a new list</doc>
+<status status="PASS" start="2025-12-05T01:20:50.814969" elapsed="0.012524"/>
+</suite>
+<suite id="s1-s3" name="Task2 Login Test" source="/Users/s.duangarpai/Downloads/Test-TTB/testcases/task2_login_test.robot">
+<test id="s1-s3-t1" name="Login Success" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:20:50.898882" level="INFO">Opening browser 'chrome' to base url 'http://the-internet.herokuapp.com/login'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-05T01:20:50.898737" elapsed="5.596227"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-05T01:20:56.495692" elapsed="0.319069"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:20:56.834538" level="INFO">Current page contains text 'Login Page'.</msg>
+<arg>Login Page</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-05T01:20:56.815115" elapsed="0.019515"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:20:56.836663" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
+<arg>${USERNAME_INPUT}</arg>
+<arg>${VALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-05T01:20:56.834793" elapsed="0.147348"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:20:56.982598" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id:password'.</msg>
+<arg>${PASSWORD_INPUT}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-05T01:20:56.982419" elapsed="0.060251"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:20:57.043111" level="INFO">Clicking button 'css:button[type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-05T01:20:57.042926" elapsed="0.639409"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FLASH_MESSAGE}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-05T01:20:57.682638" elapsed="0.015341"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:20:57.709107" level="INFO">Element 'id:flash' contains text 'You logged into a secure area!'.</msg>
+<arg>${FLASH_MESSAGE}</arg>
+<arg>${SUCCESS_MESSAGE}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-12-05T01:20:57.698175" elapsed="0.011016"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:20:57.709580" level="INFO">Clicking element 'css:a.button.secondary'.</msg>
+<arg>${LOGOUT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-05T01:20:57.709341" elapsed="0.606058"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FLASH_MESSAGE}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-05T01:20:58.315652" elapsed="0.017254"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:20:58.473321" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-05T01:20:58.473493" level="FAIL">Element 'id:flash' should have contained text 'You logged out of a secure area!' but its text was 'You logged out of the secure area!
+×'.</msg>
+<arg>${FLASH_MESSAGE}</arg>
+<arg>${LOGOUT_MESSAGE}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2025-12-05T01:20:58.333074" elapsed="0.144676">Element 'id:flash' should have contained text 'You logged out of a secure area!' but its text was 'You logged out of the secure area!
+×'.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Login Page</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-12-05T01:20:58.477917" elapsed="0.000021"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-05T01:20:58.478163" elapsed="0.079294"/>
+</kw>
+<doc>To verify that users can login successfully when input a correct username and password</doc>
+<tag>login</tag>
+<tag>positive</tag>
+<tag>task2</tag>
+<status status="FAIL" start="2025-12-05T01:20:50.898342" elapsed="7.659219">Element 'id:flash' should have contained text 'You logged out of a secure area!' but its text was 'You logged out of the secure area!
+×'.</status>
+</test>
+<test id="s1-s3-t2" name="Login Failed - Password Incorrect" line="35">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:20:58.558283" level="INFO">Opening browser 'chrome' to base url 'http://the-internet.herokuapp.com/login'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-05T01:20:58.558133" elapsed="8.024704"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-05T01:21:06.583957" elapsed="0.515586"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:07.116828" level="INFO">Current page contains text 'Login Page'.</msg>
+<arg>Login Page</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-05T01:21:07.100115" elapsed="0.016847"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:07.117836" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
+<arg>${USERNAME_INPUT}</arg>
+<arg>${VALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-05T01:21:07.117406" elapsed="0.171232"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:07.289090" level="INFO">Typing text 'Password!' into text field 'id:password'.</msg>
+<arg>${PASSWORD_INPUT}</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-05T01:21:07.288885" elapsed="0.039409"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:07.328727" level="INFO">Clicking button 'css:button[type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-05T01:21:07.328523" elapsed="0.044897"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FLASH_MESSAGE}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-05T01:21:07.373590" elapsed="0.939527"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:08.332891" level="INFO">Element 'id:flash' contains text 'Your password is invalid!'.</msg>
+<arg>${FLASH_MESSAGE}</arg>
+<arg>${INVALID_PASSWORD_MESSAGE}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-12-05T01:21:08.313432" elapsed="0.019553"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:08.340626" level="INFO">Current page contains text 'Login Page'.</msg>
+<arg>Login Page</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-05T01:21:08.333309" elapsed="0.007415"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-05T01:21:08.341098" elapsed="0.074459"/>
+</kw>
+<doc>To verify that users can login unsuccessfully when they input a correct username but wrong password</doc>
+<tag>login</tag>
+<tag>negative</tag>
+<tag>task2</tag>
+<status status="PASS" start="2025-12-05T01:20:58.557790" elapsed="9.857869"/>
+</test>
+<test id="s1-s3-t3" name="Login Failed - Username Not Found" line="56">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:08.416442" level="INFO">Opening browser 'chrome' to base url 'http://the-internet.herokuapp.com/login'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-05T01:21:08.416279" elapsed="8.240377"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-05T01:21:16.657775" elapsed="0.507621"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:17.184759" level="INFO">Current page contains text 'Login Page'.</msg>
+<arg>Login Page</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-05T01:21:17.165719" elapsed="0.019589"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:17.186137" level="INFO">Typing text 'tomholland' into text field 'id:username'.</msg>
+<arg>${USERNAME_INPUT}</arg>
+<arg>${INVALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-05T01:21:17.185678" elapsed="0.109442"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:17.295436" level="INFO">Typing text 'Password!' into text field 'id:password'.</msg>
+<arg>${PASSWORD_INPUT}</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-05T01:21:17.295273" elapsed="0.035550"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:17.331130" level="INFO">Clicking button 'css:button[type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-05T01:21:17.330982" elapsed="0.043389"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FLASH_MESSAGE}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-05T01:21:17.374532" elapsed="0.866195"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:18.261759" level="INFO">Element 'id:flash' contains text 'Your username is invalid!'.</msg>
+<arg>${FLASH_MESSAGE}</arg>
+<arg>${INVALID_USERNAME_MESSAGE}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-12-05T01:21:18.241108" elapsed="0.020752"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-05T01:21:18.270428" level="INFO">Current page contains text 'Login Page'.</msg>
+<arg>Login Page</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-05T01:21:18.262151" elapsed="0.008368"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-05T01:21:18.270840" elapsed="0.074042"/>
+</kw>
+<doc>To verify that users can login unsuccessfully when they input a username that did not exist</doc>
+<tag>login</tag>
+<tag>negative</tag>
+<tag>task2</tag>
+<status status="PASS" start="2025-12-05T01:21:08.415926" elapsed="9.929067"/>
+</test>
+<doc>Task 2: Create automation script to test website login</doc>
+<status status="FAIL" start="2025-12-05T01:20:50.827679" elapsed="27.517652"/>
+</suite>
+<suite id="s1-s4" name="Task3 Api Test" source="/Users/s.duangarpai/Downloads/Test-TTB/testcases/task3_api_test.robot">
+<test id="s1-s4-t1" name="Get User Profile Success" line="7">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-12-05T01:21:18.458171" level="INFO">GET Request : url=https://reqres.in/api/users/12 
+ path_url=/api/users/12 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-12-05T01:21:18.458381" level="INFO">GET Response : url=https://reqres.in/api/users/12 
+ status=403, reason=Forbidden 
+ headers={'Date': 'Thu, 04 Dec 2025 18:21:18 GMT', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'accept-ch': 'Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA', 'cf-mitigated': 'challenge', 'critical-ch': 'Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA', 'cross-origin-embedder-policy': 'require-corp', 'cross-origin-opener-policy': 'same-origin', 'cross-origin-resource-policy': 'same-origin', 'origin-agent-cluster': '?1', 'permissions-policy': 'accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()', 'referrer-policy': 'same-origin', 'server-timing': 'chlray;desc="9a8d529e7f62d02f", cfL4;desc="?proto=TCP&amp;rtt=5864&amp;min_rtt=5653&amp;rtt_var=2271&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2830&amp;recv_bytes=777&amp;delivery_rate=715372&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=e9cb9ff67c7ee220&amp;ts=31&amp;x=0"', 'x-content-type-options': 'nosniff', 'x-frame-options': 'SAMEORIGIN', 'Cache-Control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'Expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=mvCrooaweF4Z9Ubd90Eq1PgOMoMIM6%2FnNEDRsATsRxBPT%2Fjr3gkRBXeWcQCqWt4zimCfxN1KddiAmHjEmAzk8vPNkEDydO5%2BfTc3v5FgTRNexUmcJMerJWV9eSSWeQSw3p1OhY1WBA%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '9a8d529e7f62d02f-BKK', 'Content-Encoding': 'gzip'} 
+ body=&lt;!DOCTYPE html&gt;&lt;html lang="en-US"&gt;&lt;head&gt;&lt;title&gt;Just a moment...&lt;/title&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;&lt;meta name="robots" content="noindex,nofollow"&gt;&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;&lt;style&gt;*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width &lt;= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width &lt;= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}&lt;/style&gt;&lt;meta http-equiv="refresh" content="360"&gt;&lt;/head&gt;&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;(function(){window._cf_chl_opt = {cvId: '3',cZone: 'reqres.in',cType: 'managed',cRay: '9a8d529e7f62d02f',cH: 'rgqyOtDLaDkqj7k5QMnYtP1z4pWtcfkriVHGIq1lzrY-1764872478-1.2.1.1-fxzJ_Rxx6_St1iU.3EijUBXKdwUkoFY7taXjeKEI04k6F2De.PU6zgQzH1ts4xCR',cUPMDTk:"\/api\/users\/12?__cf_chl_tk=OCRB9BGjD8bZ3jgXHWVvvXqXvLpmRc0RVfpC_2qZc.8-1764872478-1.0.1.1-U1DcSHzOcXZOeCz8RgRjfJFJknCHeHtsr4SEl49quvc",cFPWv: 'g',cITimeS: '1764872478',cTplC:0,cTplV:5,cTplB: '0',fa:"\/api\/users\/12?__cf_chl_f_tk=OCRB9BGjD8bZ3jgXHWVvvXqXvLpmRc0RVfpC_2qZc.8-1764872478-1.0.1.1-U1DcSHzOcXZOeCz8RgRjfJFJknCHeHtsr4SEl49quvc",md: 'WAHJxQh_NivEUJVezHrqEiAMMtfz0XW5.oiVNYbRczU-1764872478-1.2.1.1-2FVn4OkT2k4RZ5ozDmRdWXPnCcAyvlDftcL2GHxtGyVDRfza7p8zDzqAOn4GBU1oQnhs7wqLlyeNWDAH597fXDsFlIrUzcKCgGPzAhyaJJMIaL_dsjYlAp9H7N2wYmG6Rc2c6XOst7gGm18xGFCHYqydnTmJlDNorzAYIhHPif1vDNQSMvqVO3Bmbh7GXAoampsdu3jl67c9U.uZQdP7m.62Np1jHCPJhevyp2fkCk968_wTiDAxfGjDL7DsNM9ANrh3dT6FZXFLSBnOHd2DyMWUYKIUDUemMoa4MZthdZVQWtvv3WBkQISYDyREPPtX887mfmgoafOB.bOpRhldjO2HWEQvA4MJnnWTo95ZELlqXo27.uB6jSt08wK_Tclu75iApb5QO9gtYJQPVkG5NQLRZfgoW0MgCvZeLmqnqiansFxjWbSmY0Ae_SLnJerPgtnvhtxFvfZJG0.3P.eqzLhxibKlUApqzIVvLRi1av2k_rBIWYE8I6uIcsp5ljWDr51ebAC_aTSOSztZD6ElX3rk16cGXqjmd.UnWlRwXLRuMYuPQEN8LseIp4M_EZPWzo1nMXuNXpwyKj8X5a2uoA0h_7QJCxAG.2GfQwIjqjKswrhE5BzZriUReObfyq80_PA_cgcws_ujkRMxkxIrZr74NnoBdiOUnZ8kby5O5wsl6OT_jW54nqZxh.9wRvA2553j8xdAlEGzBkC_Q9mwR0iwbQXQDJSDD9J1z1hpqoBxm2PjzJCQYb_.SLy0lcNRKgakPV0t4i5PZnfi7Iod6i1CVq_zb0USVbj3JxQ11PHnAJTBuf6sePrPZwN62ka4Q4.HpTlWGd4bO1mn8RwfJyV3bPwoPaJUwBmC9JAMc8mM1VqD57fQYVS1ccExy78hskA7KDxxU9.LmZu_HbVZhVPJSgVkY22P9VNxbCl0jkyvVPO05SFa8Vxt59lmz_1pucNaYNW.S4D5w0T7DkrqpA',mdrd: 'NbwG43ByasY3iGIbeLNFL7pD40E64aT0sSlkmBagUzI-1764872478-1.2.1.1-GmoIYXgCCPu6492ty6J03E8kSLqH1vKZGJAs9I2jN.5EIgV8GrrAIZiOGt07xNELoI8g8.xD4eF0v6cPgjWrMhLAWAbv.c1pGohSQODkSAUaLYH_sBA7cIvTWD1w52UrtCVBuVOuIMJUePPlIZvXx.7ATzm1XuM.tlOzQOPNQdhiZZgBVa9aT9FW7RKDImfQfBUSjAlaGdDrlqsdvnCHR9Fp73FFlHttMKDD8c1eLgw4m9JnbGAAfJOk9.h65rBFtAMXOtgOQWRnG.eP4GGI6qW3wfdjPVRoDaxjhfhd7XjMmDlHoId2VSWJDWkgWtV14bj_IpnVDZRXHu_2AACYt1zbtqA7uFNDhQ2p5CvFYQ4VxVlIwQCes5EDhOeAlEMCGWBXhFoFYSeTRY9qoJv73zmaJhMUftI4IKrzzYQTPN..62t2YO_csbsTTZosgKVFBL5Omx0if.FZWpvgP2BNuOV7NXFEejektKuBWimmKgd2mf5UE6ChqQ8Tmr9fhO32f7.Zb9hQtwhukFFUPsY8wATen8f84DYEOtVHzENYAUuoppWD7rLFa6XDgSZrKl5Er1J9AssVi_0k9CKDvuztNc7VlRr7Z33KBu1mPIhORBq6SFArE3NH49M9mC5EDJcpNqSYsqwknB_4biWied8gP4h5mY_rbnpVrQ0MrpxpdUjfUPGTER1wKQb4m0P_DOLo.FY.eycmG3w.3DAAOehxirKrYvocn45WYcMakZu67PEzLm48F9AqGwnmhlZYxAVu_M9ISqZcOcdmKdFzthBEqAq0jon6_qCkfgmrzGxv9JHCskm34aNUFu7z0abaMCU_VSogOiw6pKJsprqAExmnku6J9Wz8MbCShE9CTs0YzKp85LAfM0c7ajGYh9ZIDLEFB6N0zVztKkvwwn8xg.3mfsGI93gr0mAmFL9Xq2YG8z7dQ60fvhEZlZNW8GNj_9UFotaL3qPsSJr3IMFuBtDAe5X_CR6kQCEIAa7dgniztU8J5VMQjksp28P6gprJMcJncKdozcjeqX32UeYUGvkx7i9DrWrMXzPvs3bEWG8R.DCQV7eQZMH4tQ3lVxRHdW10Q8.KouTB4vylZYjHvumpylRlyzr2fJLNCLLAvybz3IzvAX8uvJge2Bw7C3R8xioXBK5eiLBMwNDfEKTv5o4rRyy0zYmGdtIXm2CjuhsgvQ4nHLoytdziQmLDXVR.a2Ah2kRs5wbX9VjicoJALgZUQ0iZZnRbA26q_c5FvJxkPxYtcsblDo4Sbuq_lLgNkUF2dppzBEQWRyOoI78hBy87Ip8VaIPwmxVSaSXQkrUfDNtLaSQnSnpTYYq8j9tsdxyd9BV32QPas1blTTknNqrlCRim7sqqppiVOUsvsAwAXeqZ9esxClps2C3agh0lShJXwJwGTnyonxL9LhB40iWXF379ApYFCqdsuXD5Tkt3LEqDfzAsrT47Ct6TcjUoXCYJQ6pZqQBK5NgsynqwCqmuV3mW02GFJuyfjGrzdzksbGphC00kmgWRgpRKI1bueaxS1SzPddGkY0ZisC0.wSm9zF7FXybrt3KU2TdWxsvlWGN3bLcNFUYJd7z9sE54T5hc7SWPO2bKFRkwjol7dhOundD859Sw.1j0EcIKDb8rzQOXxATtQH772XxUmyjZDybK0L753b3.LZ0ssn8Xd0lFgs7c9Y8KEi_ay3ni1V0aJqhE9SV8FGGIe2kq90o7y0jY01WTFkwh6hcOImg6tnSowbPiOHconZhiiCE_0QqItecvjejKPwE2AIXbgHzBi9sTn1cl1B_2usbKnP9N_7yPDfTIjKnIJ4GTK.D.Jm3YwneSwwCh5zvzeuwKOpPnnSBRdLjmDuFywmjktLemZaliEfZ_Kzya1eTtljpOlyiwDlTnDm9cP3awghq.rWLuZEsDyJFJkPpybfz8XVLH6j.CeXfjBNlp_jbHTcYCs6lNsSKMurjtU.VAx_6fIaVBJRr6W_2PivbOUi7on.er.khWukBvh_ht0jDG7xjK5F6G6uYW5WXJ0Kks42nRj26jmdBO5TRA_.wUHUdiaY4PQaulC5O9blGOxU02WbmY4XhP.qgEKQZMrg_rzwn_hy_KokgH6rRfjTbGNacaU3rocDk.hWTeEhFGupevL7MbTf8w.ToBRRXVA0.nFRsEvk_iueybn4sROKMLkSOFR0u.utIxg3fdsafPbTQyN1CPUvX4fNCY8zzMjo_nfzjkDQ9ebUDvvMdfdCLsd6Mx1ndQXXuIrfv0smvvSxBZcgHxw0rXReSMACKX5tyLi4wFXT6.TbGgyT3wAE5FgDe5Az5MYHnl_WEcyR6NcCBz2oIXFS4ItA1dUtx8fTLoBYLJ9HqasMnBWzGAbP7cwv9lKRkQLI96cQOzXbjUtrRHXcrAkS0Wj58',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=9a8d529e7f62d02f';window._cf_chl_opt.cOgUHash = location.hash === '' &amp;&amp; location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' &amp;&amp; location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history &amp;&amp; window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/api\/users\/12?__cf_chl_rt_tk=OCRB9BGjD8bZ3jgXHWVvvXqXvLpmRc0RVfpC_2qZc.8-1764872478-1.0.1.1-U1DcSHzOcXZOeCz8RgRjfJFJknCHeHtsr4SEl49quvc"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());&lt;/script&gt;&lt;/body&gt;&lt;/html&gt; 
+ </msg>
+<msg time="2025-12-05T01:21:18.458602" level="FAIL">HTTPError: 403 Client Error: Forbidden for url: https://reqres.in/api/users/12</msg>
+<var>${response}</var>
+<arg>${BASE_URL}${USER_PROFILE_ENDPOINT}/${EXISTING_USER_ID}</arg>
+<doc>Sends a GET request.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.348969" elapsed="0.111500">HTTPError: 403 Client Error: Forbidden for url: https://reqres.in/api/users/12</status>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>${STATUS_200}</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.460641" elapsed="0.000021"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>${STATUS_200}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.460748" elapsed="0.000012"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${response_body}</var>
+<arg>${response.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.460818" elapsed="0.000010"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${user_data}</var>
+<arg>${response_body['data']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.460878" elapsed="0.000009"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${user_data['id']}</arg>
+<arg>${EXPECTED_USER_ID}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.460934" elapsed="0.000008"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${user_data['email']}</arg>
+<arg>${EXPECTED_EMAIL}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.460990" elapsed="0.000008"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${user_data['first_name']}</arg>
+<arg>${EXPECTED_FIRST_NAME}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.461044" elapsed="0.000007"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${user_data['last_name']}</arg>
+<arg>${EXPECTED_LAST_NAME}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.461093" elapsed="0.000007"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${user_data['avatar']}</arg>
+<arg>${EXPECTED_AVATAR}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.461159" elapsed="0.000007"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>User Profile Data: ${user_data}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.461228" elapsed="0.000008"/>
+</kw>
+<doc>To verify that the user profile API returns correct data when requesting an existing user's profile</doc>
+<tag>api</tag>
+<tag>positive</tag>
+<tag>task3</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.348715" elapsed="0.112634">HTTPError: 403 Client Error: Forbidden for url: https://reqres.in/api/users/12</status>
+</test>
+<test id="s1-s4-t2" name="Get User Profile But User Not Found" line="39">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-12-05T01:21:18.527092" level="INFO">GET Request : url=https://reqres.in/api/users/1234 
+ path_url=/api/users/1234 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-12-05T01:21:18.527189" level="INFO">GET Response : url=https://reqres.in/api/users/1234 
+ status=403, reason=Forbidden 
+ headers={'Date': 'Thu, 04 Dec 2025 18:21:18 GMT', 'Content-Type': 'text/html; charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'accept-ch': 'Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA', 'cf-mitigated': 'challenge', 'critical-ch': 'Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA', 'cross-origin-embedder-policy': 'require-corp', 'cross-origin-opener-policy': 'same-origin', 'cross-origin-resource-policy': 'same-origin', 'origin-agent-cluster': '?1', 'permissions-policy': 'accelerometer=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()', 'referrer-policy': 'same-origin', 'server-timing': 'chlray;desc="9a8d529eed7ed331", cfL4;desc="?proto=TCP&amp;rtt=5930&amp;min_rtt=5709&amp;rtt_var=2299&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2830&amp;recv_bytes=779&amp;delivery_rate=708355&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=42c28038a5c3b030&amp;ts=29&amp;x=0"', 'x-content-type-options': 'nosniff', 'x-frame-options': 'SAMEORIGIN', 'Cache-Control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'Expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=FcEMsd23oPS5CIpmn0MocNct9F%2FR0ehESZVr8uDBktp0vVSznC4nFJ0vuZe85VP6jvSDTjYUTcj7p3cTgTRB%2BonNTGxuTQbN7llESPrXUiT7aWkQfY3dyOmUNvf8sBM7RcZmpCGN2g%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '9a8d529eed7ed331-BKK', 'Content-Encoding': 'gzip'} 
+ body=&lt;!DOCTYPE html&gt;&lt;html lang="en-US"&gt;&lt;head&gt;&lt;title&gt;Just a moment...&lt;/title&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;meta http-equiv="X-UA-Compatible" content="IE=Edge"&gt;&lt;meta name="robots" content="noindex,nofollow"&gt;&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;&lt;style&gt;*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width &lt;= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width &lt;= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}&lt;/style&gt;&lt;meta http-equiv="refresh" content="360"&gt;&lt;/head&gt;&lt;body&gt;&lt;div class="main-wrapper" role="main"&gt;&lt;div class="main-content"&gt;&lt;noscript&gt;&lt;div class="h2"&gt;&lt;span id="challenge-error-text"&gt;Enable JavaScript and cookies to continue&lt;/span&gt;&lt;/div&gt;&lt;/noscript&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;(function(){window._cf_chl_opt = {cvId: '3',cZone: 'reqres.in',cType: 'managed',cRay: '9a8d529eed7ed331',cH: 'TBKwasMzFygHyPoxO6BJQZTJgD20YziQd48ypuM1kKM-1764872478-1.2.1.1-6kfN8Nh7Sy4ii0LOvEBTAkwFR4oRqwgRHVCLGRRpKPS0c5LIctV8YmnoOMow8ALE',cUPMDTk:"\/api\/users\/1234?__cf_chl_tk=9GbThZq3A.r0PESCzJ5OUjJ_kRYYawhcHyZzuNVw3h0-1764872478-1.0.1.1-L08G0ykbnVZS8LZaWV7Ne5.AWiMq2Z3GwTD6T7Ograc",cFPWv: 'g',cITimeS: '1764872478',cTplC:0,cTplV:5,cTplB: '0',fa:"\/api\/users\/1234?__cf_chl_f_tk=9GbThZq3A.r0PESCzJ5OUjJ_kRYYawhcHyZzuNVw3h0-1764872478-1.0.1.1-L08G0ykbnVZS8LZaWV7Ne5.AWiMq2Z3GwTD6T7Ograc",md: 'mmdBGOk.iswNHbHRgdhdwGi3CZhysC4Ci3fpX1lOCCA-1764872478-1.2.1.1-STI_O4ygUTBK18irAGIRSdfO6A10f605RCMmCnJWFAVD_OJq1im.4L9nuO2jsXNKUT0dvF12IsqkhaFva_A44UgI46Jxzfr0Hrqkkw19WfNqRwJsBD7FRRpeHuOOIqisbjgkwOZEKEESU1SwKKqO2vV5MgxXDjt2o3JaC4j0B4mdCTT5SDIsOPmbUI4oZ02x9m1k2YKugYpyiguvV1Rh7x9Jxwg4AOQzwNsUpQsYEGrOWJMzwCzGnq5HTArRJ34pZOx4KDwIq4j2xsmJeRB.sFklgTSAPTMeX0B5cFmt_Mdh0.IXILbl25djHmM9Zy0ubCjXa8UPw_sQb3TtREjjrtMPltGSRPzo_YpxNczifkK8FQ57J6SylwQyDqqzOsfyIXHQQM1UpSt2AxzHYF5kkq4inO2nfB7nD_qWrFmqcDF4aTiIBX532nn00Eru8Wtpc_6CMyf4bWscpm9Y7gQwYiC93cKd.In3DrIwzYAOWLWts6vUPO6C8uNxhOmMFN.LtMoF3IryH.iRnEG1fisYMgnnXtfT9YK_HPwCU4VJ.xpbLutwDt6hJuOyE6LArr71iLJXhxY1W8TwH_V08iqvwo1T2.zIIARA1uoFnzKIfb6nS.jKUiZdZ3VTqltfU0PHIcVWtBRokfgX1zEUnUynTFiayCOT1jO7Kko03RKla7CUXF79fQioHbDHIV6EYPtJ9UL.7UZEW.kPhyg.pXDb0Y2mTlRoNqq.8M_ABdgwEESDX25zLCwGWD4tJlQLtOlO2.5UoJTBv26lr643mDvB1GAFVNpJQP8TbWzTLx_1maeLC.NBUL9VdB_fMbRfUtPI2ivBHTGNTpWa0uc4jW02uVHbDEm1xCj3meDb7OGRshY0VPqi5n8NXOOOFRu8sGRfy76ZWzQPNyCPprg7pLDzDghN2U3yfL9PbjvpcSpVDMeh5bjKz.f_rM9ZTGsY5cvhhvMHvwK_PHsNCfXXGSSaRA',mdrd: 'Urt.e4j6Qlc0djcL2Xo4MUT2Ln7a3oe2DBtCuzamFu0-1764872478-1.2.1.1-fC.2Oxbns9VlKWdEW.3UFDsx0DpfyBG0iccVmOMKwFq3v97y5OBmOqcuTLvlKa0vcIJ4MeoygERn7lvP4shspa7qkovypZ.C2yRnI1I83sp9TED5u1qpgwD6Bu7u6wWCxJ_PhhRPZR3m1SZThbOc4YAGtBYRBUBMNnxY1rHDta9gVkws8nhjro4DE9fOVvb7zgHxAo6Px04LwKR_sFLPe.H1BmOY5bsreRXpDofm7G0kRWmvrmv30Yn4nP3P3By7WBWXBOL_Gt5XkRFPL6318VhMr1QshpP_kRxaqJiUW34WK0a1I72P6Lwxa7IVywDGiM6EpnVZw89DgKCfcT2tHCZoDKFofeR8J8gSbXU68Pl.w.LPGcQNtUCD3oa_ijD1hZd38z2iOsKzFZaYMBgzC_jHxG8WgexJscFXdVrdlgwK8b_UvtzcJi2nou9OLLSQhlfIIuo7sVYLHyY80iT.S97qg4BLLy4sJjkRq8rKNmmkI1OOLBi2IDQt481Gow3VdupSC9duRywkQH17J1ew2jV6mZp7uBgpZZ_87b2G1a_ESf5pFRcaL7qFKciQI4DYpSde7MERhze3xoJQEhTGZqrv8UnIqoHLRtSCvpkzF42KVyQfglFsih0fPHWb3rtswyxOPH5fEUHG1Dljf_rjZUqNBt1Y_WozHz5ng4M3..tkEXJhtLQEJF3O_sgAXjj87UMfAk0pP02_r44pbL7h_S2VteSdlW0wfnODTwJEnChKyZ6dEFDz7URDVk.VODfGEWBt_eks.GOWHmadT8xQAkBBSOrvWB_jIZQTYKRm3rS1poVfTjpp6o89GarWLZiWLtwh17epv74IY113WUEhMO0zjw5pToyC_NJYY2rL8Sdo.PPkNYKBSoNaNzoh2KgyU61_x2ZLXk4mxe0M_WCehx.tb426oB7D2zPAemt.3i5NZAQi_i_gBgL0c_LCw6OIidfwYBRmKWv89mqLlsPnYnbLq0QdHKe1O7aESFD1bTHH1cJUrYq25CmAVfxDW910wBJvgouZNWraijvOGDlf_iQyK6zX3JaekDmMkB4eaT7K_prA5DT2.47fkMmcEaltJ.81MKchTP7UK1.Ur_Gje6LQaoY6e6w8L4lTaXd5y.ayquUtSYtyhw1zJSoco1jkVxhyPlDRRf3aA7F44vL9VajjiOoWKvbBH1VUrlrtPQezc8EhY8QgnwMXAJUre5xkI6p5SVlnT4_NgpyssDBeaRAETn7GKbFuQ6D8ibyux1_mD_MudCY9Dg31HgbfNHfBJlnPtNOz3keYq5ySWjWKKpb6CfdTK.kAIkTpi2eMAQgNOEKpE8blRXb.fvGMJvHpEkHhHDJHqVQaYU75IFB7MujtbyHUxsnqBI_OQS6UGwNqciCf.cjylBvfQktV3Vri7kDx6X72XzPfye053NJLXxI3LarE15lsQ_1lOVZ_RT6mgyxtiXg1.6xMW9Secw3OCEqQtIqDLp9zCS3cb69SUq7q2.Kop6GrjN0l7YS4caEjjaPDXzkpAI9jdFrZ0mt0EgCQwMvLT_rfrXtssJ00DeW.oOYQdLCVOGSOFiz9PtA6A3jxM2E4JmaReWtksVDFfhRF46UIHOp4.Wi5_Ikk9X4aYOYHhZKgXvcWoTmYhWlri0ktwtJ8C39DWPgHyxWvPFxeisSvGtdZGJynLmgdsPnO8WLq7NYDQaxZ3KO5uhB84tnnsAqauQjnRx7nokEqtxXMpPjk4hnuwjdHSTOEtTJoOGz9YF6_npXF0Fk0q8R5UvFxwQSDOELg2mrSu0VnceS4Z4cHNy50JCY4sScD2SxPYOgDcWcr5BukiZCszEb4RZWpYkDZMruFr7UyV5bTSvcKdKMF..q1ROcWCf1DA0.3n0Uvq_EJZ5nCe2rzqgcLoKxSj_M.RvNl4psOnVuexJll18MNeTtTKPP2_ptqgWuSCDwRLjz6nw3L1cvC1nOlrfQstWCXnG0h8nvlwiAHAYkz81QDE0vPR7.d7GJTBFShNVTcH2WOMr5eM8Vy4cXJx9f3NKzKPo8vKpTEYdnTsecgtPJNBaQ9LEfo14xNkDd9WmHo7y2owjl4idpkJ.ql4Yk1g9zAuaAbJvkFfVWEVZk9k3OJ4.K3Lan9QK3kwLcasnMuwNjH0f8.gQFUSGPoBQyeEPaCXNtE3h4agTGATW3UwghgQ0TTzzuOXnmS1.1rnyyR50o3WlhAcfiNGZgFJ1NQvNO1ywWkLjfuTMuvYx39gCo.48StHJ4WBWOkDr9ohJAhJsW4vHgNfnbab3iUQ8DEWMR5vQ5hLqdKSf1y5RJJl3EIrcgr94JKT_.rN98B958o5AvWmK4ZGMQxy1FoaXQeZZa4arqZqw0_XE8gb0tKSnP4aEIvnKvYG0g8b62_QXsH.Jv5rT1zafecq.A',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=9a8d529eed7ed331';window._cf_chl_opt.cOgUHash = location.hash === '' &amp;&amp; location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' &amp;&amp; location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history &amp;&amp; window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/api\/users\/1234?__cf_chl_rt_tk=9GbThZq3A.r0PESCzJ5OUjJ_kRYYawhcHyZzuNVw3h0-1764872478-1.0.1.1-L08G0ykbnVZS8LZaWV7Ne5.AWiMq2Z3GwTD6T7Ograc"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());&lt;/script&gt;&lt;/body&gt;&lt;/html&gt; 
+ </msg>
+<msg time="2025-12-05T01:21:18.527369" level="FAIL">HTTPError: 403 Client Error: Forbidden for url: https://reqres.in/api/users/1234</msg>
+<var>${response}</var>
+<arg>${BASE_URL}${USER_PROFILE_ENDPOINT}/${NON_EXISTING_USER_ID}</arg>
+<doc>Sends a GET request.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.461721" elapsed="0.066107">HTTPError: 403 Client Error: Forbidden for url: https://reqres.in/api/users/1234</status>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>${STATUS_404}</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.527973" elapsed="0.000020"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>${STATUS_404}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.528064" elapsed="0.000011"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${response_body}</var>
+<arg>${response.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.528136" elapsed="0.000010"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${empty_dict}</var>
+<arg>{}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.528217" elapsed="0.000010"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${response_body}</arg>
+<arg>${empty_dict}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.528289" elapsed="0.000009"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Response Body: ${response_body}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.528354" elapsed="0.000010"/>
+</kw>
+<doc>To verify that the user profile API returns a '404 not found' status when requesting a non-existent user's profile</doc>
+<tag>api</tag>
+<tag>negative</tag>
+<tag>task3</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.461468" elapsed="0.067001">HTTPError: 403 Client Error: Forbidden for url: https://reqres.in/api/users/1234</status>
+</test>
+<doc>Task 3: Create automation script for test REST API GET request</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.345684" elapsed="0.182940"/>
+</suite>
+<suite id="s1-s5" name="Task4 Mobile Test" source="/Users/s.duangarpai/Downloads/Test-TTB/testcases/task4_mobile_test.robot">
+<test id="s1-s5-t1" name="TC01 - Add New Todo Item Success" line="8">
+<kw name="Open Minimal Todo App" owner="mobile_keywords" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.593363" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c3aed70&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.593938" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c3aefd0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.594603" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c47d130&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.595204" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.595119" elapsed="0.006379">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.602077" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.602178" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c4827a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.591595" elapsed="0.012730">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c4827a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</arg>
+<arg>timeout=${MEDIUM_TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.604448" elapsed="0.000017"/>
+</kw>
+<doc>Opens the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.591398" elapsed="0.013133">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c4827a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Close Minimal Todo App" owner="mobile_keywords" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.604964" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.604895" elapsed="0.000542">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.606013" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.606088" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.604817" elapsed="0.001517">No application is open</status>
+</kw>
+<doc>Closes the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.604699" elapsed="0.001687">No application is open</status>
+</kw>
+<doc>Verify that user can successfully add a new todo item</doc>
+<tag>add</tag>
+<tag>mobile</tag>
+<tag>positive</tag>
+<tag>task4</tag>
+<tag>todo</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.591168" elapsed="0.015257">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c4827a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s5-t2" name="TC02 - Add Multiple Todo Items" line="22">
+<kw name="Open Minimal Todo App" owner="mobile_keywords" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.607919" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c4839b0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.608493" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c483ce0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.608980" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f4050&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.609700" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.609601" elapsed="0.002369">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.612823" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.612972" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f4380&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.606806" elapsed="0.008780">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f4380&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</arg>
+<arg>timeout=${MEDIUM_TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.615705" elapsed="0.000016"/>
+</kw>
+<doc>Opens the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.606715" elapsed="0.009059">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f4380&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Close Minimal Todo App" owner="mobile_keywords" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.616208" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.616141" elapsed="0.000452">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.617114" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.617181" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.616066" elapsed="0.001350">No application is open</status>
+</kw>
+<doc>Closes the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.615942" elapsed="0.001522">No application is open</status>
+</kw>
+<doc>Verify that user can add multiple todo items</doc>
+<tag>add</tag>
+<tag>mobile</tag>
+<tag>positive</tag>
+<tag>task4</tag>
+<tag>todo</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.606532" elapsed="0.010967">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f4380&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s5-t3" name="TC03 - Edit Todo Item Success" line="40">
+<kw name="Open Minimal Todo App" owner="mobile_keywords" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.618944" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5590&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.619411" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f58c0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.619851" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5bf0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.620395" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.620304" elapsed="0.002928">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.623810" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.623918" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5f20&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.617868" elapsed="0.008013">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5f20&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</arg>
+<arg>timeout=${MEDIUM_TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.625965" elapsed="0.000015"/>
+</kw>
+<doc>Opens the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.617784" elapsed="0.008241">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5f20&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Close Minimal Todo App" owner="mobile_keywords" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.626416" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.626354" elapsed="0.000461">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.627370" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.627450" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.626288" elapsed="0.001400">No application is open</status>
+</kw>
+<doc>Closes the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.626174" elapsed="0.001567">No application is open</status>
+</kw>
+<doc>Verify that user can successfully edit an existing todo item</doc>
+<tag>edit</tag>
+<tag>mobile</tag>
+<tag>positive</tag>
+<tag>task4</tag>
+<tag>todo</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.617603" elapsed="0.010178">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5f20&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s5-t4" name="TC04 - Delete Todo Item Success" line="58">
+<kw name="Open Minimal Todo App" owner="mobile_keywords" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.630270" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f7790&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.631538" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c483df0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.632236" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c483ac0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.632843" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.632732" elapsed="0.002412">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.635718" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.635811" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c483570&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.628200" elapsed="0.010090">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c483570&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</arg>
+<arg>timeout=${MEDIUM_TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.638418" elapsed="0.000015"/>
+</kw>
+<doc>Opens the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.628098" elapsed="0.010394">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c483570&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Close Minimal Todo App" owner="mobile_keywords" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.639052" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.638972" elapsed="0.000559">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.640207" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.640365" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.638884" elapsed="0.001771">No application is open</status>
+</kw>
+<doc>Closes the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.638741" elapsed="0.001980">No application is open</status>
+</kw>
+<doc>Verify that user can successfully delete a todo item</doc>
+<tag>delete</tag>
+<tag>mobile</tag>
+<tag>positive</tag>
+<tag>task4</tag>
+<tag>todo</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.627897" elapsed="0.012870">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c483570&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s5-t5" name="TC05 - Mark Todo As Complete" line="76">
+<kw name="Open Minimal Todo App" owner="mobile_keywords" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.642155" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f6250&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.642543" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f6030&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.642987" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5d00&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.644494" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.644225" elapsed="0.004750">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.649785" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.649920" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f59d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.641196" elapsed="0.011252">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f59d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</arg>
+<arg>timeout=${MEDIUM_TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.652592" elapsed="0.000019"/>
+</kw>
+<doc>Opens the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.641091" elapsed="0.011586">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f59d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Close Minimal Todo App" owner="mobile_keywords" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.653207" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.653126" elapsed="0.000630">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.654417" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.654523" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.653039" elapsed="0.001912">No application is open</status>
+</kw>
+<doc>Closes the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.652892" elapsed="0.002144">No application is open</status>
+</kw>
+<doc>Verify that user can mark a todo item as complete</doc>
+<tag>complete</tag>
+<tag>mobile</tag>
+<tag>positive</tag>
+<tag>task4</tag>
+<tag>todo</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.640884" elapsed="0.014272">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f59d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s5-t6" name="TC06 - Add Empty Todo Item" line="93">
+<kw name="Open Minimal Todo App" owner="mobile_keywords" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.657431" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5260&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.657845" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f45a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.658203" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f4270&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.658679" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.658586" elapsed="0.002906">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.662162" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.662292" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f79b0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.656334" elapsed="0.009710">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f79b0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</arg>
+<arg>timeout=${MEDIUM_TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.666171" elapsed="0.000017"/>
+</kw>
+<doc>Opens the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.656194" elapsed="0.010053">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f79b0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Close Minimal Todo App" owner="mobile_keywords" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.666714" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.666645" elapsed="0.000495">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.667777" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.668166" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.666568" elapsed="0.001962">No application is open</status>
+</kw>
+<doc>Closes the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.666430" elapsed="0.002192">No application is open</status>
+</kw>
+<doc>Verify that user cannot add an empty todo item</doc>
+<tag>mobile</tag>
+<tag>negative</tag>
+<tag>task4</tag>
+<tag>todo</tag>
+<tag>validation</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.655929" elapsed="0.012760">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f79b0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s5-t7" name="TC07 - Verify App Launch" line="111">
+<kw name="Open Minimal Todo App" owner="mobile_keywords" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.670426" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c631040&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.671391" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c631370&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.671837" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f7ce0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.672565" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.672386" elapsed="0.002860">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.675871" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.675988" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f7ac0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.669220" elapsed="0.009319">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f7ac0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</arg>
+<arg>timeout=${MEDIUM_TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.678659" elapsed="0.000016"/>
+</kw>
+<doc>Opens the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.669085" elapsed="0.009650">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f7ac0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Close Minimal Todo App" owner="mobile_keywords" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.679359" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.679260" elapsed="0.000534">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.681015" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.681264" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.679159" elapsed="0.002785">No application is open</status>
+</kw>
+<doc>Closes the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.679023" elapsed="0.003025">No application is open</status>
+</kw>
+<doc>Verify that the Minimal Todo app launches successfully</doc>
+<tag>app</tag>
+<tag>launch</tag>
+<tag>mobile</tag>
+<tag>positive</tag>
+<tag>task4</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.668846" elapsed="0.013276">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f7ac0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s5-t8" name="TC08 - Verify Todo List Persistence" line="123">
+<kw name="Open Minimal Todo App" owner="mobile_keywords" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.683661" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f4d10&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.684066" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f59d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.684439" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5d00&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.684977" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.684873" elapsed="0.002647">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.688187" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.688343" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f6030&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.682603" elapsed="0.008377">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f6030&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</arg>
+<arg>timeout=${MEDIUM_TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.691120" elapsed="0.000015"/>
+</kw>
+<doc>Opens the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.682485" elapsed="0.008711">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f6030&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Close Minimal Todo App" owner="mobile_keywords" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-12-05T01:21:18.691692" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.691615" elapsed="0.000491">No application is open</status>
+</kw>
+<msg time="2025-12-05T01:21:18.692667" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.692735" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.691533" elapsed="0.001492">No application is open</status>
+</kw>
+<doc>Closes the Minimal Todo application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.691386" elapsed="0.001695">No application is open</status>
+</kw>
+<doc>Verify that todo items persist after app restart</doc>
+<tag>mobile</tag>
+<tag>persistence</tag>
+<tag>positive</tag>
+<tag>task4</tag>
+<tag>todo</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.682258" elapsed="0.010862">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f6030&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+Also teardown failed:
+No application is open</status>
+</test>
+<doc>Task 4: Design test coverage and create automated test scripts for mobile application</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.528856" elapsed="0.164519"/>
+</suite>
+<suite id="s1-s6" name="Task6 Cipher Test" source="/Users/s.duangarpai/Downloads/Test-TTB/testcases/task6_cipher_test.robot">
+<test id="s1-s6-t1" name="TC01 - Decrypt VTAOG With K=2 Should Return TRYME" line="14">
+<kw name="Decrypt Cipher">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:21:18.698080" level="FAIL">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</msg>
+<var>${result}</var>
+<arg>__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('${encrypted}', ${k})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.697203" elapsed="0.000948">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2025-12-05T01:21:18.698201" elapsed="0.000019"/>
+</return>
+<var>${result}</var>
+<arg>${ENCRYPTED_1}</arg>
+<arg>${K_VALUE_1}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.697032" elapsed="0.001239">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${EXPECTED_DECRYPTED_1}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.698405" elapsed="0.000017"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Encrypted: ${ENCRYPTED_1}, K: ${K_VALUE_1}, Decrypted: ${result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.698487" elapsed="0.000009"/>
+</kw>
+<doc>Verify that decrypting 'VTAOG' with k=2 returns 'TRYME'</doc>
+<tag>cipher</tag>
+<tag>example</tag>
+<tag>positive</tag>
+<tag>task6</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.696703" elapsed="0.001875">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</test>
+<test id="s1-s6-t2" name="TC02 - Decrypt ABC With K=1 Should Return ZAB" line="22">
+<kw name="Decrypt Cipher">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:21:18.699494" level="FAIL">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('ABC', 1)" failed: ModuleNotFoundError: No module named 'simple_cipher'</msg>
+<var>${result}</var>
+<arg>__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('${encrypted}', ${k})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.699219" elapsed="0.000333">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('ABC', 1)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2025-12-05T01:21:18.699600" elapsed="0.000012"/>
+</return>
+<var>${result}</var>
+<arg>${ENCRYPTED_2}</arg>
+<arg>${K_VALUE_2}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.699057" elapsed="0.000596">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('ABC', 1)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${EXPECTED_DECRYPTED_2}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.699720" elapsed="0.000010"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Encrypted: ${ENCRYPTED_2}, K: ${K_VALUE_2}, Decrypted: ${result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.699776" elapsed="0.000007"/>
+</kw>
+<doc>Verify that decrypting 'ABC' with k=1 returns 'ZAB'</doc>
+<tag>cipher</tag>
+<tag>positive</tag>
+<tag>task6</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.698694" elapsed="0.001150">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('ABC', 1)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</test>
+<test id="s1-s6-t3" name="TC03 - Decrypt XYZ With K=3 Should Return UVW" line="30">
+<kw name="Decrypt Cipher">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:21:18.700413" level="FAIL">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('XYZ', 3)" failed: ModuleNotFoundError: No module named 'simple_cipher'</msg>
+<var>${result}</var>
+<arg>__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('${encrypted}', ${k})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.700220" elapsed="0.000237">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('XYZ', 3)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2025-12-05T01:21:18.700484" elapsed="0.000007"/>
+</return>
+<var>${result}</var>
+<arg>${ENCRYPTED_3}</arg>
+<arg>${K_VALUE_3}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.700104" elapsed="0.000420">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('XYZ', 3)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${EXPECTED_DECRYPTED_3}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.700583" elapsed="0.000008"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Encrypted: ${ENCRYPTED_3}, K: ${K_VALUE_3}, Decrypted: ${result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.700637" elapsed="0.000007"/>
+</kw>
+<doc>Verify that decrypting 'XYZ' with k=3 returns 'UVW'</doc>
+<tag>cipher</tag>
+<tag>positive</tag>
+<tag>task6</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.699926" elapsed="0.000773">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('XYZ', 3)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</test>
+<test id="s1-s6-t4" name="TC04 - Decrypt HELLO With K=5 Should Return CZGGJ" line="38">
+<kw name="Decrypt Cipher">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:21:18.701309" level="FAIL">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('HELLO', 5)" failed: ModuleNotFoundError: No module named 'simple_cipher'</msg>
+<var>${result}</var>
+<arg>__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('${encrypted}', ${k})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.701119" elapsed="0.000235">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('HELLO', 5)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2025-12-05T01:21:18.701381" elapsed="0.000007"/>
+</return>
+<var>${result}</var>
+<arg>${ENCRYPTED_4}</arg>
+<arg>${K_VALUE_4}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.701008" elapsed="0.000413">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('HELLO', 5)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${EXPECTED_DECRYPTED_4}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.701478" elapsed="0.000008"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Encrypted: ${ENCRYPTED_4}, K: ${K_VALUE_4}, Decrypted: ${result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.701611" elapsed="0.000008"/>
+</kw>
+<doc>Verify that decrypting 'HELLO' with k=5 returns 'CZGGJ'</doc>
+<tag>cipher</tag>
+<tag>positive</tag>
+<tag>task6</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.700839" elapsed="0.000879">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('HELLO', 5)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</test>
+<test id="s1-s6-t5" name="TC05 - Decrypt Single Character A With K=26 Should Return A" line="46">
+<kw name="Decrypt Cipher">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:21:18.702941" level="FAIL">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('A', 26)" failed: ModuleNotFoundError: No module named 'simple_cipher'</msg>
+<var>${result}</var>
+<arg>__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('${encrypted}', ${k})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.702659" elapsed="0.000341">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('A', 26)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2025-12-05T01:21:18.703035" elapsed="0.000020"/>
+</return>
+<var>${result}</var>
+<arg>${ENCRYPTED_5}</arg>
+<arg>${K_VALUE_5}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.702029" elapsed="0.001071">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('A', 26)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${EXPECTED_DECRYPTED_5}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.703159" elapsed="0.000112"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Encrypted: ${ENCRYPTED_5}, K: ${K_VALUE_5}, Decrypted: ${result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.703399" elapsed="0.000016"/>
+</kw>
+<doc>Verify that decrypting 'A' with k=26 (full rotation) returns 'A'</doc>
+<tag>cipher</tag>
+<tag>edge_case</tag>
+<tag>positive</tag>
+<tag>task6</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.701812" elapsed="0.001703">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('A', 26)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</test>
+<test id="s1-s6-t6" name="TC06 - Decrypt Z With K=1 Should Return Y" line="54">
+<kw name="Decrypt Cipher">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:21:18.704494" level="FAIL">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('Z', 1)" failed: ModuleNotFoundError: No module named 'simple_cipher'</msg>
+<var>${result}</var>
+<arg>__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('${encrypted}', ${k})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.704224" elapsed="0.000327">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('Z', 1)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2025-12-05T01:21:18.704583" elapsed="0.000009"/>
+</return>
+<var>${result}</var>
+<arg>${ENCRYPTED_6}</arg>
+<arg>${K_VALUE_6}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.704079" elapsed="0.000550">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('Z', 1)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${EXPECTED_DECRYPTED_6}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.704691" elapsed="0.000008"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Encrypted: ${ENCRYPTED_6}, K: ${K_VALUE_6}, Decrypted: ${result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.704744" elapsed="0.000007"/>
+</kw>
+<doc>Verify that decrypting 'Z' with k=1 returns 'Y'</doc>
+<tag>cipher</tag>
+<tag>edge_case</tag>
+<tag>positive</tag>
+<tag>task6</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.703723" elapsed="0.001089">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('Z', 1)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</test>
+<test id="s1-s6-t7" name="TC07 - Decrypt Empty String Should Return Empty String" line="62">
+<kw name="Decrypt Cipher">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:21:18.705392" level="FAIL">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</msg>
+<var>${result}</var>
+<arg>__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('${encrypted}', ${k})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.705192" elapsed="0.000305">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2025-12-05T01:21:18.705554" elapsed="0.000011"/>
+</return>
+<var>${result}</var>
+<arg>${EMPTY_STRING}</arg>
+<arg>${K_VALUE_1}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.705079" elapsed="0.000532">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${EMPTY_STRING}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.705688" elapsed="0.000011"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Empty string decryption result: '${result}'</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.705750" elapsed="0.000008"/>
+</kw>
+<doc>Verify that decrypting empty string returns empty string</doc>
+<tag>cipher</tag>
+<tag>edge_case</tag>
+<tag>empty</tag>
+<tag>task6</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.704895" elapsed="0.000931">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</test>
+<test id="s1-s6-t8" name="TC08 - Decrypt With K=0 Should Return Same String" line="70">
+<kw name="Decrypt Cipher">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:21:18.706460" level="FAIL">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 0)" failed: ModuleNotFoundError: No module named 'simple_cipher'</msg>
+<var>${result}</var>
+<arg>__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('${encrypted}', ${k})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.706229" elapsed="0.000282">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 0)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2025-12-05T01:21:18.706540" elapsed="0.000008"/>
+</return>
+<var>${result}</var>
+<arg>${ENCRYPTED_1}</arg>
+<arg>${K_VALUE_ZERO}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.706102" elapsed="0.000482">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 0)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${ENCRYPTED_1}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.706646" elapsed="0.000008"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Encrypted: ${ENCRYPTED_1}, K: ${K_VALUE_ZERO}, Decrypted: ${result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.706700" elapsed="0.000007"/>
+</kw>
+<doc>Verify that decrypting with k=0 returns the same string</doc>
+<tag>cipher</tag>
+<tag>edge_case</tag>
+<tag>task6</tag>
+<tag>zero_shift</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.705912" elapsed="0.000852">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 0)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</test>
+<test id="s1-s6-t9" name="TC09 - Decrypt With Large K Value Should Handle Wrapping" line="78">
+<kw name="Decrypt Cipher">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:21:18.707471" level="FAIL">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 53)" failed: ModuleNotFoundError: No module named 'simple_cipher'</msg>
+<var>${result}</var>
+<arg>__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('${encrypted}', ${k})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.707276" elapsed="0.000240">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 53)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2025-12-05T01:21:18.707543" elapsed="0.000008"/>
+</return>
+<var>${result}</var>
+<arg>${ENCRYPTED_1}</arg>
+<arg>${53}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.707032" elapsed="0.000553">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 53)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<kw name="Decrypt Cipher">
+<var>${expected}</var>
+<arg>${ENCRYPTED_1}</arg>
+<arg>${1}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.707659" elapsed="0.000010"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.707718" elapsed="0.000007"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Large K value (53) handled correctly: ${result}</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.707833" elapsed="0.000013"/>
+</kw>
+<doc>Verify that decrypting with large k value handles wrapping correctly</doc>
+<tag>cipher</tag>
+<tag>large_k</tag>
+<tag>positive</tag>
+<tag>task6</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.706842" elapsed="0.001139">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 53)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</test>
+<test id="s1-s6-t10" name="TC10 - Decrypt Multiple Characters With Various K Values" line="88">
+<kw name="Decrypt Cipher">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-05T01:21:18.708766" level="FAIL">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</msg>
+<var>${result}</var>
+<arg>__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('${encrypted}', ${k})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.708561" elapsed="0.000253">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<return>
+<value>${result}</value>
+<status status="NOT RUN" start="2025-12-05T01:21:18.708842" elapsed="0.000008"/>
+</return>
+<var>${result1}</var>
+<arg>VTAOG</arg>
+<arg>${2}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.708336" elapsed="0.000549">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result1}</arg>
+<arg>TRYME</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.708944" elapsed="0.000008"/>
+</kw>
+<kw name="Decrypt Cipher">
+<var>${result2}</var>
+<arg>ABC</arg>
+<arg>${1}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.709014" elapsed="0.000009"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result2}</arg>
+<arg>ZAB</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.709114" elapsed="0.000009"/>
+</kw>
+<kw name="Decrypt Cipher">
+<var>${result3}</var>
+<arg>HELLO</arg>
+<arg>${5}</arg>
+<doc>Decrypts encrypted string using simple cipher</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.709179" elapsed="0.000008"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result3}</arg>
+<arg>CZGGJ</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.709229" elapsed="0.000007"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>All multiple test cases passed</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-12-05T01:21:18.709274" elapsed="0.000006"/>
+</kw>
+<doc>Verify decryption works correctly for multiple test cases</doc>
+<tag>cipher</tag>
+<tag>multiple</tag>
+<tag>positive</tag>
+<tag>task6</tag>
+<status status="FAIL" start="2025-12-05T01:21:18.708152" elapsed="0.001184">Evaluating expression "__import__('sys').path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath('/Users/s.duangarpai/Downloads/Test-TTB/testcases'))), 'resources', 'lib')) or __import__('simple_cipher').simple_cipher('VTAOG', 2)" failed: ModuleNotFoundError: No module named 'simple_cipher'</status>
+</test>
+<doc>Task 6: Simple Cipher - Decryption test automation</doc>
+<status status="FAIL" start="2025-12-05T01:21:18.693587" elapsed="0.015871"/>
+</suite>
+<status status="FAIL" start="2025-12-05T01:20:50.730764" elapsed="27.978938"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="34" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">add</stat>
+<stat pass="0" fail="12" skip="0">api</stat>
+<stat pass="0" fail="1" skip="0">app</stat>
+<stat pass="0" fail="10" skip="0">cipher</stat>
+<stat pass="0" fail="1" skip="0">complete</stat>
+<stat pass="0" fail="1" skip="0">comprehensive</stat>
+<stat pass="0" fail="1" skip="0">date_filter</stat>
+<stat pass="0" fail="1" skip="0">delete</stat>
+<stat pass="0" fail="4" skip="0">edge_case</stat>
+<stat pass="0" fail="1" skip="0">edit</stat>
+<stat pass="0" fail="1" skip="0">empty</stat>
+<stat pass="0" fail="1" skip="0">example</stat>
+<stat pass="0" fail="3" skip="0">get_order</stat>
+<stat pass="0" fail="3" skip="0">get_pet</stat>
+<stat pass="0" fail="1" skip="0">join</stat>
+<stat pass="0" fail="1" skip="0">large_k</stat>
+<stat pass="0" fail="1" skip="0">launch</stat>
+<stat pass="2" fail="1" skip="0">login</stat>
+<stat pass="0" fail="8" skip="0">mobile</stat>
+<stat pass="0" fail="4" skip="0">multiple</stat>
+<stat pass="2" fail="5" skip="0">negative</stat>
+<stat pass="0" fail="1" skip="0">persistence</stat>
+<stat pass="0" fail="20" skip="0">positive</stat>
+<stat pass="0" fail="3" skip="0">post_user</stat>
+<stat pass="0" fail="1" skip="0">products</stat>
+<stat pass="0" fail="3" skip="0">query</stat>
+<stat pass="3" fail="3" skip="0">sql</stat>
+<stat pass="1" fail="0" skip="0">task1</stat>
+<stat pass="2" fail="1" skip="0">task2</stat>
+<stat pass="0" fail="2" skip="0">task3</stat>
+<stat pass="0" fail="14" skip="0">task4</stat>
+<stat pass="0" fail="10" skip="0">task5</stat>
+<stat pass="1" fail="11" skip="0">task6</stat>
+<stat pass="1" fail="1" skip="0">task7</stat>
+<stat pass="1" fail="1" skip="0">task8</stat>
+<stat pass="0" fail="7" skip="0">todo</stat>
+<stat pass="3" fail="1" skip="0">validation</stat>
+<stat pass="0" fail="1" skip="0">zero_shift</stat>
+</tag>
+<suite>
+<stat name="Testcases" id="s1" pass="6" fail="34" skip="0">Testcases</stat>
+<stat name="Senior Testengineer Assessment" id="s1-s1" pass="3" fail="13" skip="0">Testcases.Senior Testengineer Assessment</stat>
+<stat name="Task4 Task5 Api Test" id="s1-s1-s1" pass="0" fail="10" skip="0">Testcases.Senior Testengineer Assessment.Task4 Task5 Api Test</stat>
+<stat name="Task6 Sql Test" id="s1-s1-s2" pass="3" fail="3" skip="0">Testcases.Senior Testengineer Assessment.Task6 Sql Test</stat>
+<stat name="Task1 Duplicate Items" id="s1-s2" pass="1" fail="0" skip="0">Testcases.Task1 Duplicate Items</stat>
+<stat name="Task2 Login Test" id="s1-s3" pass="2" fail="1" skip="0">Testcases.Task2 Login Test</stat>
+<stat name="Task3 Api Test" id="s1-s4" pass="0" fail="2" skip="0">Testcases.Task3 Api Test</stat>
+<stat name="Task4 Mobile Test" id="s1-s5" pass="0" fail="8" skip="0">Testcases.Task4 Mobile Test</stat>
+<stat name="Task6 Cipher Test" id="s1-s6" pass="0" fail="10" skip="0">Testcases.Task6 Cipher Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-05T01:20:50.726170" level="WARN">Error in file '/Users/s.duangarpai/Downloads/Test-TTB/testcases/task6_cipher_test.robot' on line 11: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-12-05T01:20:50.804135" level="ERROR">Error in file '/Users/s.duangarpai/Downloads/Test-TTB/testcases/senior_testengineer_assessment/task6_sql_test.robot' on line 3: Importing library 'DatabaseLibrary' failed: ModuleNotFoundError: No module named 'DatabaseLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Library/Frameworks/Python.framework/Versions/3.14/bin
+  /Library/Frameworks/Python.framework/Versions/3.14/lib/python314.zip
+  /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14
+  /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload
+  /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages</msg>
+<msg time="2025-12-05T01:21:18.593363" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c3aed70&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.593938" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c3aefd0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.594603" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c47d130&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.602077" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.606013" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.607919" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c4839b0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.608493" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c483ce0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.608980" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f4050&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.612823" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.617114" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.618944" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5590&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.619411" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f58c0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.619851" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5bf0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.623810" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.627370" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.630270" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f7790&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.631538" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c483df0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.632236" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c483ac0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.635718" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.640207" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.642155" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f6250&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.642543" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f6030&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.642987" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5d00&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.649785" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.654417" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.657431" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5260&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.657845" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f45a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.658203" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f4270&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.662162" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.667777" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.670426" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c631040&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.671391" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c631370&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.671837" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f7ce0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.675871" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.681015" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.683661" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f4d10&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.684066" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f59d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.684439" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c5f5d00&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-12-05T01:21:18.688187" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-12-05T01:21:18.692667" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

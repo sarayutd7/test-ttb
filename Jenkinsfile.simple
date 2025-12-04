@@ -1,0 +1,47 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Checkout Code From Git') {
+            steps {
+                echo 'Checking out code from Git repository...'
+                checkout scm
+            }
+        }
+        
+        stage('Run Test Automate') {
+            steps {
+                echo 'Running automated tests...'
+                script {
+                    sh '''
+                        cd test
+                        pip install -r requirements.txt
+                        robot -d results testcases/*.robot
+                    '''
+                }
+            }
+        }
+        
+        stage('Send Result To Jenkins') {
+            steps {
+                echo 'Publishing test results...'
+                script {
+                    publishHTML([
+                        reportName: 'Robot Framework Test Report',
+                        reportDir: 'test/results',
+                        reportFiles: 'report.html',
+                        keepAll: true
+                    ])
+                    archiveArtifacts artifacts: 'test/results/**/*', allowEmptyArchive: true
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            echo 'Pipeline execution completed.'
+        }
+    }
+}
+
